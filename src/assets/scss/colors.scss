@@ -1,0 +1,65 @@
+@import "./variables/colors";
+
+.bg-primary {
+    background-color: $primary;
+}
+
+.bg-primary-fade {
+    background-color: $primary-fade;
+}
+
+.bg-bleached {
+    background-color: $bleached;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-brand-main {
+    background-color: $brandMain;
+}
+
+.bg-brand-main-hovered {
+    background-color: $brandMainHovered;
+}
+
+.bg-warning-light {
+    background-color: $warning-light;
+}
+
+.bg-pink {
+    background-color: $pink;
+}
+
+.text-primary {
+    color: $primary;
+}
+
+.text-primary-fade {
+    color: $primary-fade;
+}
+
+.text-bleached {
+    color: $bleached;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-brand-main {
+    color: $brandMain;
+}
+
+.text-brand-main-hovered {
+    color: $brandMainHovered;
+}
+
+.text-warning-light {
+    color: $warning-light;
+}
+
+.text-pink {
+    color: $pink;
+}

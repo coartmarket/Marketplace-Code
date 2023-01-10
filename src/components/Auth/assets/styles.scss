@@ -1,0 +1,154 @@
+@import "../../../assets/scss/variables/colors";
+
+.auth-container {
+  padding: 20px 120px 130px;
+  max-width: 1200px;
+
+  .top-block {
+    text-align: right;
+
+    .navbar-block.action-buttons {
+      display: inline-flex;
+      align-items: center;
+
+      .coart-button.transparent {
+        color: $primary;
+      }
+    }
+  }
+
+  .auth-view-container {
+    margin-top: 125px;
+
+    .view-title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 120%;
+      color: $brandMain;
+      margin-bottom: 30px;
+    }
+
+    .register-view-container {
+      &.verif-email {
+        .btns-container {
+          margin-top: 80px;
+        }
+      }
+
+      &.key-gen {
+        .qr-block {
+          display: flex;
+          margin-top: 35px;
+
+          .qr-maze {
+            flex: 2;
+            margin-right: 12px;
+            text-align: center;
+
+            .qr-code-wrapper {
+              position: relative;
+              padding: 20px;
+              border: 1px solid $bleached;
+
+              .qr-blur-overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background: $white;
+                background: rgba(0, 0, 0, 0.01);
+                filter: blur(4px);
+                -o-filter: blur(4px);
+                -ms-filter: blur(4px);
+                -moz-filter: blur(4px);
+                -webkit-filter: blur(4px);
+                backdrop-filter: blur(6px);
+              }
+            }
+
+            .qr-reveal-toggle {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 25px;
+              color: $brandMain;
+              cursor: pointer;
+
+              i {
+                margin-right: 10px;
+              }
+            }
+          }
+
+          .qr-text {
+            flex: 5;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            margin-left: 12px;
+          }
+        }
+
+        .keys-container {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    .view-subtitle {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+    .login-password-addons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+
+      .forgot-password {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .remember-me,
+    .terms-agree {
+      display: flex;
+      cursor: pointer;
+
+      .remember-me-checkbox,
+      .terms-agree-checkbox {
+        cursor: pointer;
+      }
+
+      .remember-me-text,
+      .terms-agree-text {
+        margin-left: 7px;
+      }
+    }
+
+    .terms-agree {
+      margin-top: 30px;
+    }
+
+    .btns-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+
+      .coart-button {
+        &:first-child {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

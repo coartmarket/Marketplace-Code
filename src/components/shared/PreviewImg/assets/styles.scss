@@ -1,0 +1,31 @@
+@import "../../../../assets/scss/variables/colors";
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: $primary;
+
+  .cut-edge {
+    position: absolute;
+    background-color: $white;
+    z-index: 1;
+    width: 75px;
+    height: 75px;
+
+    &.bottom-left {
+      bottom: -1px;
+      left: -1px; 
+      clip-path: polygon(0% 100%, 0% 0%, 100% 100%);
+    }
+  }
+
+  &.with-narrow-bottom {
+    height: 370px;
+  }
+
+  .image {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}

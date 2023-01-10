@@ -1,0 +1,50 @@
+@import "../../../../assets/scss/variables/colors";
+
+.coart-button {
+  display: block;
+  background-color: $brandMain;
+  color: $white;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border-radius: 0;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:hover, &:active, &:focus {
+    background-color: $brandMainHovered;
+    border-color: $brandMainHovered;
+  }
+
+  &.outline {
+    background-color: $white;
+    border: 1px solid $brandMain;
+    color: $brandMain;
+
+    &:hover {
+      background-color: $brandMainHovered;
+      border: 1px solid $brandMainHovered;
+      color: $white;
+    }
+  }
+
+  &.transparent {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}

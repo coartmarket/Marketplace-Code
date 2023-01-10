@@ -1,0 +1,84 @@
+@import "../../../../assets/scss/variables/colors";
+
+$aside-margin: calc(100% / 6);
+
+.wizard-progress-container {
+  margin-bottom: 40px;
+
+  .progress-bar {
+    position: relative;
+    background-color: $white;
+
+    #progress-bar-1,
+    #progress-bar-2 {
+      position: absolute;
+      background: $bleached;
+      height: 1px;
+      width: 50% - $aside-margin;
+      top: 12px;
+      left: $aside-margin;
+
+      &.active {
+        background: $brandMain;
+      }
+    }
+
+    #progress-bar-2 {
+      left: unset;
+      right: $aside-margin;
+    }
+
+    .progress-num {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      // display: flex;
+      // justify-content: space-between;
+      height: 100px;
+      display: inline-block;
+
+      .step {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        color: $primary-fade;
+        width: calc(100% / 3);
+
+        &.active {
+          border-color: $brandMain;
+          color: $brandMain;
+
+          .step-bubble {
+            border-color: $brandMain;
+          }
+        }
+
+        &.completed {
+          color: $brandMain;
+          
+          .step-bubble {
+            background-color: $brandMain;
+          }
+        }
+
+        .step-bubble {
+          border: 1px solid $bleached;
+          border-radius: 100%;
+          width: 12px;
+          height: 12px;
+          text-align: center;
+          background-color: $white;
+          font-size: 14px;
+          position: relative;
+          z-index: 1;
+          position: relative;
+        }
+
+        .step-text {
+          margin-top: 15px;
+          position: relative;
+        }
+      }
+    }
+  }
+}

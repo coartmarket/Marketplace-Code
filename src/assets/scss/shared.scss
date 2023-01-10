@@ -1,0 +1,24 @@
+@import "../../assets/scss/variables/colors";
+
+.link-text {
+  text-decoration: underline;
+  color: $brandMain;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+
+  &:hover {
+    color: $brandMainHovered;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.mt-80 {
+  margin-top: 80px !important;
+}
+
+.border-transparent {
+  border-color: transparent !important;
+}

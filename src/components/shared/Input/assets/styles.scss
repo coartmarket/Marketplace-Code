@@ -1,0 +1,55 @@
+@import "../../../../assets/scss/variables/colors";
+
+.coart-input-container {
+  .label-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .coart-input-label {
+      color: $primary-fade;
+      margin-bottom: 0;
+    }
+
+    .label-append-component {
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .input-content-container {
+    display: flex;
+    border: 1px solid $bleached;
+
+    &.focused {
+      border-color:rgba($brandMain, 0.5);
+      transition: border-color .15s ease-in-out;
+    }
+
+    .coart-input {
+      border-radius: 0;
+      border: none;
+
+      &.with-append {
+        border-right: none;
+      }
+
+      &:focus {
+        box-shadow: none;
+        border-color: rgba($brandMain, 0.5);
+        transition: none,
+        // transition-duration: 0s, 0s;
+      }
+    }
+
+    .input-append {
+      display: inline-flex;
+      align-items: center;
+      background-color: $white;
+      border-left: none;
+      padding: 2px 15px;
+    }
+  }
+}

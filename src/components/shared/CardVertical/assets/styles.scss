@@ -1,0 +1,26 @@
+@import "../../../../assets/scss/variables/colors";
+
+.card-vertical-container {
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(134, 134, 134, 0.1);
+  height: 440px;
+  width: 100%;
+
+  .bottom-block {
+    height: 130px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.narrow {
+      height: 70px;
+    }
+
+    .title-text {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+    }
+  }
+}
